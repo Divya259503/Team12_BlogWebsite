@@ -22,7 +22,7 @@ Team12 BlogWebsite is a collaborative web application project designed to create
    git clone https://github.com/Divya259503/Team12_BlogWebsite.git
    Contributions:
    S Divya dharshini[https://github.com/Divya259503]Gunashree[https://github.com/Gunashrees456]
-   jashwanth[https://github.com/jashwanth-214]
+   jashwanth[https://github.com/jashwanth-214] Rachitha[https://github.com/Rachitha29]
 images of our project:
 (https://github.com/user-attachments/assets/6daebe7a-6ca3-4d49-8bd4-75b66107b98a)
 
