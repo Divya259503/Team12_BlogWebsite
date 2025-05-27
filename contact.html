@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header,
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label,
+        form input,
+        form textarea {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Contact Us</h1>
@@ -29,11 +78,35 @@
 
             <button type="submit">Send</button>
         </form>
+
     </main>
 
     <footer>
         <p>&copy; 2025 My Static Blog</p>
     </footer>
-</body>
-</html>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const postsContainer = document.getElementById('posts');
+            if (postsContainer) {
+                // Dummy posts
+                const posts = [
+                    { title: 'Welcome to the Blog', date: '2025-04-01', content: 'This is the first post on our static blog!' },
+                    { title: 'Another Post', date: '2025-04-05', content: 'More content coming soon...' }
+                ];
 
+                posts.forEach(post => {
+                    const postEl = document.createElement('div');
+                    postEl.className = 'post';
+                    postEl.innerHTML = `
+                <h3>${post.title}</h3>
+                <small>${post.date}</small>
+                <p>${post.content}</p>
+            `;
+                    postsContainer.appendChild(postEl);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
